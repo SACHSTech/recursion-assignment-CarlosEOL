@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Before;
 import org.junit.jupiter.api.After;
 
-import RecursionAssignment.recursion;
+import recursionAssignment.Recursion;
 
 public class RecursionTest{
     
