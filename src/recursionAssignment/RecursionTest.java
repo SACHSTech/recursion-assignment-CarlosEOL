@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Before;
 import org.junit.jupiter.api.After;
 
-import rename-package.Main;
+import RecursionAssignment.recursion;
 
 public class RecursionTest{
     
