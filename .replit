@@ -1,1 +1,2 @@
 language = "java10"
+run = "javac -d bin src/recursionAssignment/Recursion.java; javac -d bin -sourcepath src -cp bin src/recursionAssignment/RecursionTest.java; java -cp bin src.recursionAssignment.RecursionTest"
