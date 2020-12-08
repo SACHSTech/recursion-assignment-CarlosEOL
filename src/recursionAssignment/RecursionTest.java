@@ -10,32 +10,28 @@ import recursionAssignment.Recursion;
 
 public class RecursionTest{
     
-    @Before
-    public void beforeTest(){
-      // Problem set 1: count 7
+  @Before
+  public void beforeTest(){
+   // Problem set 1: count 7
 
-      // some steps to perform before tests are run
-      // First, initialize the n value, insert the expected value in the 
-    }
+   // some steps to perform before tests are run
+  }
     
-    /**
-     * An initial test
-     */
-    @Test
-    public void Test1(){
-        // make assertion statement(s)
-        // assertEquals(EXPECTEDVALUE, TESTVALUE);
-        // assertTrue(TESTBOOLEAN);
-
-        assertEquals(2, Recursion.count7(1274297));
-    }
+  /**
+  * An initial test
+  */
+  @Test
+  public void Test1(){
+    // make assertion statement(s)
+    // assertEquals(EXPECTEDVALUE, TESTVALUE); 
+    // assertTrue(TESTBOOLEAN);
+    assertEquals(2, Recursion.count7(727));
+  }
     
-    // add more tests
+  // add more tests
     
-    @After
-    public void afterTest(){
-      // some steps to perform after tests are run
-    }
-    
-    
+  @After
+  public void afterTest(){
+    // some steps to perform after tests are run
+  }    
 }

@@ -1,28 +1,36 @@
 package recursionAssignment;
 
-import com.sun.org.apache.xml.internal.utils.res.IntArrayWrapper;
-
 public class Recursion{
 
    // Problem Set 1
 
   public static int count7(int n) {
 
-    String strN = n;
+    String strN = Integer.toString(n);
     int intTotal;
     int intCount7 = 0;
     char CharN;
 
-    intTotal = strN.length();
-    if (intTotal < 1)
-    CharN = strN.charAt(intTotal - 1);
+    intTotal = strN.length() - 1;
+    CharN = strN.charAt(intTotal);
 
-    if (CharN == '7') {
+    if (intTotal = 0) {
 
-      intCount7++;
+      if (CharN == '7') {
+        intCount7++;
+      }
 
+      System.out.println("Reached the end.");
+      return intCount7;
+      
+    }else{
+
+      if (CharN == '7') {
+        intCount7++;
+      }
+
+      count7(n/10);
     }
-    return intCount7 + count7(n/10);
   }
   
   // Problem Set 2
@@ -31,23 +39,42 @@ public class Recursion{
   
   /** public static String changePi(String str)
   * Given a string, compute recursively (no loops) a new string where * all appearances of "pi" have been replaced by "3.14".
-  **/
+  **/ 
 
-    String strPart1;
-    String strPart2;
-    int intNumLetter = strRead.length();
-    int intCount;
+    String strNew = strRead.substring(0);
+    String strNew2 = strRead.substring(1);
+    String Pi = "3.14";
+    int intNumLetter = strRead.length() - 1;
 
-    if (intCount == intNumLetter) {
+    System.out.print(intNumLetter);
 
-      return strTotal;
+    if (intNumLetter == 0) {
 
-    }else{
+      return strRead;
       
-      Char = 
+    }else{
+      if (strNew.equalsIgnoreCase("p")) {
 
+        if (strNew2.equalsIgnoreCase("i")) {
+          return Pi + changePi(strRead.substring(1, intNumLetter));
+        }else{
+          return changePi(strRead.substring(1, intNumLetter));
+        }
+
+      }
+      return changePi(strRead.substring(1, intNumLetter));
     }
+  }
+
+  // Problem Set 3
+
+  public static String stringClean(String strWord) {
+
+    int intAll = strWord.length();
+
+    if (intAll = 0) {
+      return strWord;
+    }else if 
 
   }
-    
 }
