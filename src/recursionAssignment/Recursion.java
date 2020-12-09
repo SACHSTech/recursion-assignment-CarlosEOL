@@ -43,29 +43,17 @@ public class Recursion{
 
     String strNew = strRead.substring(0);
     String strNew2 = strRead.substring(1);
+    String strNewRead;
     String Pi = "3.14";
-    int intNumLetter = strRead.length() - 1;
 
-    System.out.print(intNumLetter);
+    int intNumLetter = strRead.length();
 
-    if (intNumLetter == 0) {
+    if ()
 
-      return strRead;
-      
-    } else {
-      if (strNew.equalsIgnoreCase("p")) {
 
-        if (strNew2.equalsIgnoreCase("i")) {
-          return Pi + changePi(strRead.substring(1, intNumLetter));
-        } else {
-          return changePi(strRead.substring(1, intNumLetter));
-        }
-
-      }
-      return changePi(strRead.substring(1, intNumLetter));
-    }
+    
   }
-
+}
   // Problem Set 3
 
   public static String stringClean(String strWord) {
@@ -73,8 +61,8 @@ public class Recursion{
     //Given a string, return recursively a "cleaned" string where adjacent chars that are the same have been reduced to a single char. So "yyzzza" yields "yza".
 
     int intAll = strWord.length();
-    char Char1 = strWord.charAt(0);
-    char Char2 = strWord.charAt(1);
+    String strSub1 = strWord.charAt(0);
+    String strSub2 = strWord.charAt(1);
     String strChar1;
     String strChar2;
     String strAll = "";
