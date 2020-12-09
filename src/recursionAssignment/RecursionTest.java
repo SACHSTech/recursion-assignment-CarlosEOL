@@ -1,5 +1,7 @@
 package recursionAssignment;
 
+import java.io.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.sun.source.tree.AssertTree;
@@ -16,17 +18,15 @@ public class RecursionTest{
   * An initial test
   */
   @Test
-  public void Test1(){
+  public void TestCount7(){
     // make assertion statement(s)
     // assertEquals(EXPECTEDVALUE, TESTVALUE); 
     // assertTrue(TESTBOOLEAN);
     assertEquals(2, Recursion.count7(787));
-
-    Recursion.count7(7997);
   }
 
   @Test
-  public void Test2(){
+  public void TestChangePi(){
     // make assertion statement(s)
     // assertEquals(EXPECTEDVALUE, TESTVALUE); 
     // assertTrue(TESTBOOLEAN);
@@ -34,10 +34,26 @@ public class RecursionTest{
   }
 
   @Test
-  public void Test3(){
+  public void stringClean(){
+    // make assertion statement(s)
+    // assertEquals(EXPECTEDVALUE, TESTVALUE); 
+    // assertTrue(TESTBOOLEAN);
+    assertEquals("STSdsTS", Recursion.stringClean("SSSTSdsTS"));
+  }
+
+  @Test
+  public void stringClean2(){
     // make assertion statement(s)
     // assertEquals(EXPECTEDVALUE, TESTVALUE); 
     // assertTrue(TESTBOOLEAN);
     assertEquals("STSdsTS", Recursion.stringClean("SSSTSdsTTTS"));
+  }
+
+  @Test
+  public void TestPairStar(){
+    // make assertion statement(s)
+    // assertEquals(EXPECTEDVALUE, TESTVALUE); 
+    // assertTrue(TESTBOOLEAN);
+    assertEquals("Il*lGoGrab*btea", Recursion.pairStar("IllGoGrabbtea"));
   }
 }
