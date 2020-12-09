@@ -20,19 +20,15 @@ public class Recursion{
     //  n/10
     // } print intCount7;
 
-    String strN = Integer.toString(n);
-    int intN = strN.length();
-    char CharN = strN.charAt(0);
-
-    if (intN < 1) {
+    if (n == 0) {
       return 0;
-    } else if (CharN == '7') {
-      
-      return 1 + count7(Integer.parseInt(strN.substring(1)));
+    } else if (n % 10 == 7) {
+    
+      return 1 + count7(n / 10);
 
     } else {
       
-      return 0 + count7(Integer.parseInt(strN.substring(1)));
+      return count7(n / 10);
 
     }
   }
