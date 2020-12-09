@@ -21,6 +21,8 @@ public class RecursionTest{
     // assertEquals(EXPECTEDVALUE, TESTVALUE); 
     // assertTrue(TESTBOOLEAN);
     assertEquals(2, Recursion.count7(787));
+
+    Recursion.count7(7997);
   }
 
   @Test
