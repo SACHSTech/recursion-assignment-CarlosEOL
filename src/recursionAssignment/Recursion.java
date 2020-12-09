@@ -34,29 +34,10 @@ public class Recursion{
   }
   
   // Problem Set 2
-  
-  public static String changePi(String strRead) {
-  
-  /** public static String changePi(String str)
-  * Given a string, compute recursively (no loops) a new string where * all appearances of "pi" have been replaced by "3.14".
-  **/ 
-
-    if ((strRead.substring(1, 2).equalsIgnoreCase(""))) {
-
-      return strRead.substring(0, 1);
-
-    } else if ((strRead.substring(0)).equalsIgnoreCase("p") && (strRead.substring(1)).equalsIgnoreCase("i")) {
-
-      return "3.14" + changePi(strRead.substring(1));
-
-    } else {
-      return changePi(strRead.substring(1));
-    }
-  }
 
   public static String pairStar(String strPair) {
 
-    if (strPair.substring(1, 2).equals("")) {
+    if (strPair.length() <= 1) {
 
       return strPair.substring(0);
 
@@ -65,9 +46,7 @@ public class Recursion{
       return strPair.substring(0, 1) + "*" + pairStar(strPair.substring(1));
 
     } else {
-
-      return pairStar(strPair.substring(1));
-
+      return strPair.substring(0, 1) + pairStar(strPair.substring(1));
     }
   }
 

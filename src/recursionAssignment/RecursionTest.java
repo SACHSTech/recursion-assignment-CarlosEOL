@@ -26,14 +26,6 @@ public class RecursionTest{
   }
 
   @Test
-  public void TestChangePi(){
-    // make assertion statement(s)
-    // assertEquals(EXPECTEDVALUE, TESTVALUE); 
-    // assertTrue(TESTBOOLEAN);
-    assertEquals("Love3.14", Recursion.changePi("LovePi"));
-  }
-
-  @Test
   public void stringClean(){
     // make assertion statement(s)
     // assertEquals(EXPECTEDVALUE, TESTVALUE); 
