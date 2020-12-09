@@ -66,8 +66,6 @@ public class Recursion{
       return strWord.substring(0, 1) + (strWord.substring(1));
     }
   }
-
-  // The fact that I can't think of a solution for a recursive function without a base is killing me. If you look at my early commits (actually don't look at it), they're all wrong because I'm thinking of recursive like while and for loops. You said that recursive is like Inception, dream in a dream, my brain is throttling by processing that idea. I'm sorry but, I just can't.
-
+  
   // I looked back at the recursive examples that you listed, it all make sense. But then I went on youtube to search for the answer to problem 1, then this random guy start talking about rewriting a while loop to recursive method, it just straight up fried my brain.
 }
