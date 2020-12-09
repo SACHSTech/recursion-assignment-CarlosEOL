@@ -42,18 +42,19 @@ public class Recursion{
   **/ 
 
     int intNumLetter = strRead.length();
+    String Pi = "3.14";
 
     if (strRead == "") {
 
       return "";
 
-    } else if (strNew ) {
-
-      return Pi + changePi(strRead.substring(1, intNumLetter - 1));
+    } else if ((strRead.substring(0)).equalsIgnoreCase("p") && (strRead.substring(1)).equalsIgnoreCase("i")) {
+      
+      return Pi + changePi(strRead.substring(0, intNumLetter - 1));
 
     } else {
 
-      return strCombNew + changePi(strRead.substring(1, intNumLetter - 1));
+      return changePi(strRead.substring(1, intNumLetter - 1));
     }
   }
 
