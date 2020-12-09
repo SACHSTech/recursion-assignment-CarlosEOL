@@ -30,7 +30,7 @@ public class RecursionTest{
     // make assertion statement(s)
     // assertEquals(EXPECTEDVALUE, TESTVALUE); 
     // assertTrue(TESTBOOLEAN);
-    assertEquals("IJustLove3.14", Recursion.changePi("IJustLovePi"));
+    assertEquals("Love3.14", Recursion.changePi("LovePi"));
   }
 
   @Test
