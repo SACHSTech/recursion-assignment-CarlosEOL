@@ -44,7 +44,7 @@ public class Recursion{
     int intNumLetter = strRead.length();
     String Pi = "3.14";
 
-    if (strRead == "") {
+    if ((strRead.substring(1)).equalsIgnoreCase("")) {
 
       return "";
 
