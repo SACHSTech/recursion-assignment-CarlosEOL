@@ -2,20 +2,15 @@ package recursionAssignment;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import com.sun.source.tree.AssertTree;
+
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Before;
-import org.junit.jupiter.api.After;
+// import org.junit.jupiter.api.Before;
+// import org.junit.jupiter.api.After;
 
 import recursionAssignment.Recursion;
 
 public class RecursionTest{
-    
-  @Before
-  public void beforeTest(){
-   // Problem set 1: count 7
-
-   // some steps to perform before tests are run
-  }
     
   /**
   * An initial test
@@ -25,13 +20,22 @@ public class RecursionTest{
     // make assertion statement(s)
     // assertEquals(EXPECTEDVALUE, TESTVALUE); 
     // assertTrue(TESTBOOLEAN);
-    assertEquals(2, Recursion.count7(727));
+    assertEquals(2, Recursion.count7(787));
   }
-    
-  // add more tests
-    
-  @After
-  public void afterTest(){
-    // some steps to perform after tests are run
-  }    
+
+  @Test
+  public void Test2(){
+    // make assertion statement(s)
+    // assertEquals(EXPECTEDVALUE, TESTVALUE); 
+    // assertTrue(TESTBOOLEAN);
+    assertEquals("IJustLove3.14", Recursion.changePi("IJustLovePi"));
+  }
+
+  @Test
+  public void Test3(){
+    // make assertion statement(s)
+    // assertEquals(EXPECTEDVALUE, TESTVALUE); 
+    // assertTrue(TESTBOOLEAN);
+    assertEquals("STSdsTS", Recursion.stringClean("SSSTSdsTTTS"));
+  }
 }
