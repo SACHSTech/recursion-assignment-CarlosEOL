@@ -54,6 +54,6 @@ public class RecursionTest{
     // make assertion statement(s)
     // assertEquals(EXPECTEDVALUE, TESTVALUE); 
     // assertTrue(TESTBOOLEAN);
-    assertEquals("Il*lGoGrab*btea", Recursion.pairStar("IllGoGrabbtea"));
+    assertEquals("no*onecan*not", Recursion.pairStar("noonecannot"));
   }
 }

@@ -60,13 +60,13 @@ public class Recursion{
 
       return strPair.substring(0);
 
-    } else if ((strPair.substring(0, 1)).equalsIgnoreCase(strPair.substring(1, 2))) {
+    } else if ((strPair.substring(1, 2)).equalsIgnoreCase(strPair.substring(0, 1))) {
 
       return strPair.substring(0, 1) + "*" + pairStar(strPair.substring(1));
 
     } else {
 
-      return strPair.substring(0, 1) + pairStar(strPair.substring(1));
+      return pairStar(strPair.substring(1));
 
     }
   }
