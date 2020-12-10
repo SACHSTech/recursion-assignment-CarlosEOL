@@ -7,10 +7,12 @@ public class Recursion{
   public static int count7(int n) {
 
     //given: 727
-    // 72(7)
-    // 7(2)
-    // (7)
-    // 0
+    // 72(7) + 1
+    // 7(2) skip
+    // (7) + 1
+    // 0 skip
+
+    //= 2
 
     // while (n > 0) {
     // 
