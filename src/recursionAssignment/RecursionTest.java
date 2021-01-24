@@ -1,34 +1,51 @@
 package recursionAssignment;
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Before;
-import org.junit.jupiter.api.After;
 
-import rename-package.Main;
+import java.io.*;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import com.sun.source.tree.AssertTree;
+
+import org.junit.jupiter.api.Test;
+// import org.junit.jupiter.api.Before;
+// import org.junit.jupiter.api.After;
+
+import recursionAssignment.Recursion;
 
 public class RecursionTest{
     
-    @Before
-    public void beforeTest(){
-      // some steps to perform before tests are run
-    }
-    
-    /**
-     * An initial test
-     */
-    @Test
-    public void Test1(){
-        // make assertion statement(s)
-        // assertEquals(EXPECTEDVALUE, TESTVALUE);
-        // assertTrue(TESTBOOLEAN);
-    }
-    
-    // add more tests
-    
-    @After
-    public void afterTest(){
-      // some steps to perform after tests are run
-    }
-    
-    
+  /**
+  * An initial test
+  */
+  @Test
+  public void TestCount7(){
+    // make assertion statement(s)
+    // assertEquals(EXPECTEDVALUE, TESTVALUE); 
+    // assertTrue(TESTBOOLEAN);
+    assertEquals(2, Recursion.count7(787));
+  }
+
+  @Test
+  public void stringClean(){
+    // make assertion statement(s)
+    // assertEquals(EXPECTEDVALUE, TESTVALUE); 
+    // assertTrue(TESTBOOLEAN);
+    assertEquals("STSdsTS", Recursion.stringClean("SSSTSdsTS"));
+  }
+
+  @Test
+  public void stringClean2(){
+    // make assertion statement(s)
+    // assertEquals(EXPECTEDVALUE, TESTVALUE); 
+    // assertTrue(TESTBOOLEAN);
+    assertEquals("STSdsTS", Recursion.stringClean("SSSTSdsTTTS"));
+  }
+
+  @Test
+  public void TestPairStar(){
+    // make assertion statement(s)
+    // assertEquals(EXPECTEDVALUE, TESTVALUE); 
+    // assertTrue(TESTBOOLEAN);
+    assertEquals("no*onecan*not", Recursion.pairStar("noonecannot"));
+  }
 }
